@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohamed Irfan – Python Full Stack Developer portfolio">
+    <meta name="theme-color" content="#8fa0b1">
+    <script>document.documentElement.classList.add("js")</script>
+    <title>Irfan Porfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="loader" aria-hidden="true">
+    <div class="loader-text">
+      <h1>PORTFOLIO</h1>
+    </div>
+  </div>
+<nav class="irfan-navbar" aria-label="Main navigation">
+    <div class="irfan-nav-container">
+        
+        <a href="#hero-sec" class="irfan-nav-logo">
+           MOHAMED IRFAN<span> J</span>
+        </a>
+        
+        <ul class="irfan-nav-links">
+            <li><a href="#hero-sec" class="irfan-nav-link">Home</a></li>
+            <li><a href="#about-sec" class="irfan-nav-link">About</a></li>
+            <li><a href="#projects-sec" class="irfan-nav-link">Projects</a></li>
+            <li><a href="#education-sec" class="irfan-nav-link">Education</a></li>
+            <li><a href="#contact-sec" class="irfan-nav-link">Contact</a></li>
+        </ul>
+        
+        <!-- <a href="#contact" class="irfan-nav-btn">
+            Hire Me
+        </a> -->
+    </div>
+</nav>
+    <main id="main">
+    <section class="hero-section" id="hero-sec">
+        <div class="name">
+            <h1>Hey<br>I'm Irfan</h1>
+            <h3>FULL STACK DEVELOPER</h3>
+            <div class="hero-cta">
+              <a href="#projects-sec" class="btn-primary">View Projects <i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+              <a href="{% static 'img/MOHAMED IRFAN J CV.pdf' %}" target="_blank" rel="noopener" class="btn-outline">Download CV <i aria-hidden="true" class="fa-solid fa-download"></i></a>
+            </div>
+        </div>
+        <img src="{% static 'img/mohamed_irfan_img.png' %}" alt="Mohamed Irfan" width="250" height="320" decoding="async" fetchpriority="high">
+    </section>
+    
+    <section class="about-section" id="about-sec">
+      
+      <div class="about">
+        <h2>ABOUT</h2>
+        <p>Hi, I'm Irfan, a Computer Science graduate passionate about Python and Django development. I have completed my Python Full Stack Development course at QSpiders, Chennai. I enjoy building responsive websites and exploring new technologies through hands-on projects. I'm eager to start my career as a Python Django Developer and grow through real-world experience.</p>
+        <div class="contact">
+          <div class="item">
+            <i aria-hidden="true" class="fa-regular fa-envelope"></i>
+            <span>mohamedirfan.dev03@gmail.com</span>
+          </div>
+          <div class="item">
+            <i aria-hidden="true" class="fa-solid fa-phone"></i>
+            <span>+91 8428686277</span>
+          </div>
+          <div class="item">
+            <i aria-hidden="true" class="fa-solid fa-location-dot"></i>
+            <span>Chennai, Tamil Nadu</span>
+          </div>
+           <div class="item">
+            <i aria-hidden="true" class="fa-brands fa-linkedin"></i>
+            <span><a href="https://www.linkedin.com/in/mohamed-irfan-j1718/">linkedin.com/in/mohamed-irfan-j1718</a></span>
+          </div>
+           <div class="item">
+            <i aria-hidden="true" class="fa-brands fa-github"></i>
+            <span><a href="https://github.com/Mohamed-irfan-dev">github.com/Mohamed-irfan-dev</a></span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="expertise">
+        <h2>SKILLS</h2>
+        <div class="skills">
+          <div class="box yellow g-p">HTML5</div>
+          <div class="box black w-p">CSS3</div>
+
+          <div class="box black g-p">JavaScript(ES6)</div>
+          <div class="box yellow w-p">Python</div>
+
+          <div class="box yellow g-p">Django</div>
+          <div class="box black w-p">SQL</div>
+
+          <div class="box black g-p">Bootstrap</div>
+          <div class="box yellow w-p">GitHub</div>
+
+          <div class="box yellow g-p">Problem Solving</div>
+          <div class="box black w-p">Time Management</div>
+        </div>
+      </div>
+    </section>
+    <section class="pro-section" id="projects-sec">
+      <h2>PROJECT</h2>
+      <div class="timeline">
+        <div class="project">
+          <div class="project-head">
+            <div>
+            <span class="project-index">01 · CLIENT PROJECT</span>
+            <h3>Air Travel Agency Website</h3>
+            </div>
+            <button class="btn" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-down"></i></button>
+          </div>
+            <p>Travel agency website built to help customers explore services.</p>
+        </div>
+        <div class="project-details">
+        <p>
+        1. Developed a responsive Travel Agency website using HTML, CSS, JavaScript, and React, ensuring an optimized user experience across desktop, tablet, and mobile devices. <br>
+        2. Implemented interactive features such as smooth navigation, responsive image sliders, loading screen, hover animations, and dynamic UI components to enhance user engagement. <br>
+        3. Designed an inquiry system for travel bookings with a scalable architecture, enabling seamless integration with a Django backend and WhatsApp-based customer communication.
+        </p>
+        </div>
+        <div class="project">
+          <div class="project-head">
+            <div>
+            <span class="project-index">02 · COLLEGE PROJECT</span>
+            <h3>Complete Excursion Management System</h3>
+            </div>
+            <button class="btn" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-down"></i></button>
+          </div>
+            <p>An academic project focused on managing tour packages.</p>
+        </div>
+        <div class="project-details">
+        <p>
+        1. Built the complete front-end of the Excursion Management System with responsive and modern UI components. <br>
+        2. Developed interactive pages for Home, Tour Packages, Booking, Inquiry, Contact, and User Dashboard using React, HTML, CSS, and JavaScript. <br>
+        3. Improved user experience by implementing responsive design, smooth navigation, and clean interface layouts while integrating with Django APIs.
+        </p>
+        </div>
+        <div class="project">
+          <div class="project-head">
+            <div>
+              <span class="project-index">03 · PERSONAL PROJECT</span>
+            <h3>Portfolio Website</h3>
+            </div>
+            <button class="btn" type="button"><i aria-hidden="true" class="fa-solid fa-chevron-down"></i></button>
+          </div>
+            <p>My personal space to showcase my skills, projects, and web development journey.</p>
+        </div>
+        <div class="project-details">
+        <p>
+        1.Designed and developed my portfolio website using HTML, CSS, JavaScript, and Django. <br>
+        2. Added sections for About Me, Skills, Projects, and Contact to present my profile and work. <br>
+        3.Made the website responsive and added a contact form to allow visitors to get in touch with me.
+        </p>
+        </div>
+      </div>
+    </section>
+    
+  <section class="education-courses" id="education-sec">
+    <h2>EDUCATION & COURSES</h2>
+    <div class="container">
+    
+      <div class="column">
+        <h3>EDUCATION</h3>
+        <div class="card">
+          <div class="icon">
+            <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="content">
+            <h3>BSC, Computer Science</h3>
+            <h4>Bharathidasan University, Tamil Nadu.</h4>
+            <span>2022 - 2025</span>
+            <ul>
+              <li>Graduated with a CGPA of 8.11/10, demonstrating consistent academic performance and dedication throughout the program.</li>
+              <li>Developed a strong foundation in programming, database management, web technologies, and software development.</li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i aria-hidden="true" class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="content">
+            <h3>SSLC (10th)</h3>
+            <h4>LFHS School, Kumbakonam, Tamil Nadu.</h4>
+            <span>2019 - 2020</span>
+            <ul>
+              <li>Completed Secondary Education with 68%, maintaining consistent academic performance across all subjects.</li>
+              <li>Developed self-discipline and a continuous learning mindset, laying the groundwork for higher education and technical training.</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+      
+       <div class="column">
+        <h3>COURSES</h3>
+        <div class="card">
+          <div class="icon">
+            <i aria-hidden="true" class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="content">
+            <h3>Python Full Stack Developer</h3>
+            <h4>Qspiders-Software Training Institute, Chennai</h4>
+            <span>2026</span>
+            <ul>
+              <li>Completed comprehensive training in Python Full Stack Development, focusing on modern web development technologies.</li>
+              <li>Built responsive and database-driven web applications using HTML, CSS, JavaScript, React, Python, Django, and MySQL</li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <i aria-hidden="true" class="fa-solid fa-certificate"></i>
+          </div>
+          <div class="content">
+            <h3>HSLC (12th)</h3>
+            <h4>LFHS School, Kumbakonam, Tamil Nadu</h4>
+            <span>2021 - 2022</span>
+            <ul>
+              <li>Achieved 69% in Higher Secondary Education, demonstrating consistent academic performance.</li>
+              <li>Developed a solid foundation in analytical thinking, communication, and problem-solving through academic coursework.</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="./PROPERTY/J.MOHAMED%20IRFAN%20CV.pdf" target="_blank" rel="noopener" class="resume-btn">RESUME</a>
+  </section>
+  
+  <section class="inquiry" id="contact-sec">
+    <h2 class="section-title reveal">CONTACT ME</h2>
+    <p>Have a project in mind? Send a message and I'll get back to you.</p>
+    <div class="inquiry-wrap">
+      <form action="{% url 'contact' %}" class="inquiry-form reveal" id="inquiryForm" method="POST">
+        {% csrf_token %}
+        <div class="field">
+          <input type="text" class="form-control" name="name" placeholder="Your Name" aria-label="Your Name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <input type="email" class="form-control" name="email" placeholder="Your Email" aria-label="Your Email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <textarea class="form-control" name="message" placeholder="Message..." aria-label="Message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary ripple">SUBMIT</button>
+      </form>
+    </div>
+  </section>
+  </main>
+  <footer class="footer">
+    <p>BUILD WITH PASSION — &copy; 2026 Mohamed Irfan</p>
+  </footer>
+  <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
